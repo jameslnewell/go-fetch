@@ -1,6 +1,6 @@
 # @go-fetch/useragent
 
-[![Circle CI](https://circleci.com/gh/go-fetch-js/useragent.svg?style=svg)](https://circleci.com/gh/go-fetch-js/useragent)
+[![Build Status](https://travis-ci.org/jameslnewell/go-fetch.svg?branch=master)](https://travis-ci.org/jameslnewell/go-fetch)
 
 A plugin for `@go-fetch/client` to add a user agent to every request.
 

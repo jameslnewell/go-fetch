@@ -1,6 +1,6 @@
 # @go-fetch/client
 
-[![Build Status](https://travis-ci.org/go-fetch-js/go-fetch.svg?branch=master)](https://travis-ci.org/go-fetch-js/go-fetch)
+[![Build Status](https://travis-ci.org/jameslnewell/go-fetch.svg?branch=master)](https://travis-ci.org/jameslnewell/go-fetch)
 
 A pluggable HTTP client for NodeJS and the browser.
 

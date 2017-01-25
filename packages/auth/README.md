@@ -1,6 +1,6 @@
 # @go-fetch/auth
 
-[![Build Status](https://travis-ci.org/go-fetch-js/auth.svg?branch=master)](https://travis-ci.org/go-fetch-js/auth)
+[![Build Status](https://travis-ci.org/jameslnewell/go-fetch.svg?branch=master)](https://travis-ci.org/jameslnewell/go-fetch)
 
 A plugin for `@go-fetch/client` to authenticate requests.
 
