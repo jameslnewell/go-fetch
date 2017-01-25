@@ -1,0 +1,18 @@
+language: node_js
+
+node_js:
+  - "4"
+  - "6"
+
+env:
+  - PACKAGE=client
+  - PACKAGE=auth
+  - PACKAGE=useragent
+
+install:
+  - npm install
+  - lerna bootstrap
+
+script:
+  - cd "packages/${PACKAGE}"
+  - npm test

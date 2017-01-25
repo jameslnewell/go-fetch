@@ -1,0 +1,41 @@
+{
+  "name": "@go-fetch/client",
+  "version": "3.1.1",
+  "description": "A pluggable HTTP client.",
+  "keywords": [
+    "http",
+    "https",
+    "request",
+    "response",
+    "client",
+    "fetch",
+    "get",
+    "post",
+    "plugin",
+    "middleware",
+    "promise"
+  ],
+  "main": "./lib/Client.js",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:go-fetch-js/go-fetch.git"
+  },
+  "dependencies": {
+    "is-stream": "^1.0.1",
+    "no-frills-request": "^1.1.0"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "go-fetch-json": "^1.1.0",
+    "mocha": "^2.4.5",
+    "simple-server-setup": "^0.2.0",
+    "streamifier": "^0.1.1"
+  },
+  "scripts": {
+    "test:unit": "mocha --require ./tests/setup.js ./lib/**/*.test.js",
+    "test:integration": "mocha --require ./tests/setup.js ./tests/**/*.test.js",
+    "test": "npm run test:unit && npm run test:integration",
+    "prepublish": "npm run test"
+  },
+  "license": "MIT"
+}

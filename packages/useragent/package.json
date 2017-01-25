@@ -1,0 +1,33 @@
+{
+  "name": "@go-fetch/useragent",
+  "version": "2.0.0",
+  "description": "A plugin for `@go-fetch/client` to add a user agent to every request.",
+  "keywords": [
+    "go-fetch",
+    "useragent",
+    "agent",
+    "header",
+    "http",
+    "https",
+    "client",
+    "request",
+    "fetch"
+  ],
+  "repository": "jameslnewell/go-fetch",
+  "peerDependencies": {
+    "@go-fetch/client": "^3.0.0"
+  },
+  "devDependencies": {
+    "@go-fetch/client": "^3.0.0",
+    "chai": "^3.5.0",
+    "mocha": "^3.2.0",
+    "sinon": "^1.17.7"
+  },
+  "files": [
+    "index.js"
+  ],
+  "scripts": {
+    "test": "mocha"
+  },
+  "license": "MIT"
+}
