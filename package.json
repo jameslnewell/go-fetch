@@ -1,5 +1,15 @@
 {
+  "private": true,
+  "repository": "jameslnewell/go-fetch",
   "devDependencies": {
-    "lerna": "2.0.0-beta.32"
-  }
+    "chai": "^3.5.0",
+    "chai-as-promised": "^6.0.0",
+    "lerna": "2.0.0-beta.32",
+    "mocha": "^3.2.0",
+    "sinon": "^1.17.7"
+  },
+  "scripts": {
+    "test": "lerna run test"
+  },
+  "license": "MIT"
 }

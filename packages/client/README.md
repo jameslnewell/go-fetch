@@ -305,6 +305,8 @@ function plugin(client) {
 ## Plugins
 
 - `@go-fetch/auth`
+- `@go-fetch/gzip`
+- `@go-fetch/json`
 - `@go-fetch/useragent`
 
 ## Change log

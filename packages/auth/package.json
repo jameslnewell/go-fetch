@@ -15,7 +15,7 @@
   ],
   "repository": "jameslnewell/go-fetch",
   "peerDependencies": {
-    "@go-fetch/client": ">=3.0.0"
+    "@go-fetch/client": "^3.0.0"
   },
   "devDependencies": {
     "@go-fetch/client": "^3.0.0",

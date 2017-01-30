@@ -1,17 +1,13 @@
-const expect = require('chai').expect;
-const sinon = require('sinon');
-const Client = require('@go-fetch/client');
+require('../../../setupTestGlobals');
 const useragent = require('..');
-
-const client = {};
 
 describe('@go-fetch/useragent', () => {
 
 	it('should add a `User-Agent` header with the default value', done => {
 
 		//mock the client
-		const client = {before: sinon.spy()};
-		const req = new Client.Request();
+		const client = createFakeClient();
+		const req = new sRequest();
 
 		//setup the plugin
     useragent()(client);
@@ -27,8 +23,8 @@ describe('@go-fetch/useragent', () => {
   it('should add a `User-Agent` header with the supplied value', done => {
 
     //mock the client
-    const client = {before: sinon.spy()};
-    const req = new Client.Request();
+    const client = createFakeClient();
+    const req = new Request();
 
     //setup the plugin
     useragent('example-browser')(client);
