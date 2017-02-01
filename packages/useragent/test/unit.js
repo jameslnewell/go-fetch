@@ -7,7 +7,7 @@ describe('@go-fetch/useragent', () => {
 
 		//mock the client
 		const client = createFakeClient();
-		const req = new sRequest();
+		const req = new Request();
 
 		//setup the plugin
     useragent()(client);
