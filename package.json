@@ -5,10 +5,15 @@
     "chai": "^3.5.0",
     "chai-as-promised": "^6.0.0",
     "lerna": "2.0.0-beta.32",
+    "linklocal": "^2.8.0",
     "mocha": "^3.2.0",
-    "sinon": "^1.17.7"
+    "sinon": "^1.17.7",
+    "@go-fetch/client": "file:./packages/client",
+    "@go-fetch/json": "file:./packages/json",
+    "@go-fetch/useragent": "file:./packages/useragent"
   },
   "scripts": {
+    "postinstall": "linklocal",
     "test": "lerna run test"
   },
   "license": "MIT"
