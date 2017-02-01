@@ -1,8 +1,6 @@
-const expect = require('chai').expect;
-const sinon = require('sinon');
-const Client = require('@go-fetch/client');
+'use strict';
+require('../../../setupTestGlobals');
 const auth = require('..');
-const Request = Client.Request;
 
 describe('@go-fetch/auth', () => {
 
@@ -12,7 +10,7 @@ describe('@go-fetch/auth', () => {
 
       //mock the client
       const client = {before: sinon.spy()};
-      const req = new Client.Request();
+      const req = new Request();
 
       //setup the plugin
       auth.basic('steve.jobs', 'l33tH@ck3r')(client);
@@ -42,7 +40,7 @@ describe('@go-fetch/auth', () => {
 
       //mock the client
       const client = {before: sinon.spy()};
-      const req = new Client.Request();
+      const req = new Request();
 
       //setup the plugin
       auth.bearer('abcdefg')(client);
